@@ -1,0 +1,843 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+    <!-- Optional theme -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="indexjquery.js"></script>-->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!--<link href="indexcss11.css" rel="stylesheet" />-->
+    <link href="about-css.css" rel="stylesheet" />
+
+    <link href="aboutus.css" rel="stylesheet" />
+    <link href="companies-css.css" rel="stylesheet" />
+    <link href="formval_jquery.css" rel="stylesheet" />
+    <link href="index-style.css" rel="stylesheet" />
+    <link href="indexcss.css" rel="stylesheet" />
+    <link href="teamcss.css" rel="stylesheet" />
+    <link href="navigation-barcss.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light nav-justified">
+
+        <a class="navbar-brand" href="#">
+            <img src="IMAGES/logo50x50.png" />
+        </a>
+
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>-->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="parent navbar-nav">
+                <!--<li class="nav-item logodiv">
+                    <a class="nav-link nav-color" href="#"><span class=" logoboth logo-help">#help</span><span class="logo-pepple logoboth">pepple</span></a>
+                </li>-->
+                <li class="nav-item dropdown active" id="about1">
+                    <a class="nav-link dropdown-toggle " id="navbarDropdown1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                    <div id="my-menu1" class="child dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <!--<a class="dropdown-item" href="approach.html">About us</a>-->
+                        <a class="dropdown-item link1" href="#about11">about</a>
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item link2" href="#team">team</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item link3" href="#approach">approach</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hidden-lg-down" id="navbarDropdown2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        investment
+                    </a>
+                    <div id="my-menu2" class=" child dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item link4" href="#comapies">companies </a>
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item link5" href="#FAQ">FAQ</a>
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item link6" href="#Registration">Ragistration</a>
+                        <div class="dropdown-divider"></div>
+
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        fellowship
+                    </a>
+                    <div id="my-menu3" class="child dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item link7" href="#category">Category</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item link8" href="#jsonpage">JSON data</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item link9" href="#jsonAPI">JSON API</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link link10" href="angular-practice/partner4.html"> angular js</a>
+                </li>
+
+                <li class="nav-item search-item">
+                    <a class="search-web-lg pull-right link11">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--  large menu bar ends here  ------------------------ -->
+
+    <!-- -------------navbar for samll screen-------------------- -->
+    <div class="mainnavbar-sm bg-light smallnavbar">
+        <div class="pull-left">
+            <a class="logo-sm" href="#">
+                <img src="images/logo50x50.png" />
+            </a>
+        </div>
+        <div class="pull-right">
+            <a class="search-web " id="search-web" href="#">
+                <!--<img src="IMAGES/icon-search.png" />-->
+                <i class="fa fa-search"></i>
+            </a>
+            <a class="toggle-button pull-right" href="#">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- -------------search bar for all screen-------------------- -->
+    <div id="top-search" class="bg-light top-search mainnavbar-sm">
+        <div class="searchdiv">
+            <form class="form-inline ">
+                <input class="form-control" type="search" placeholder="WHAT ARE YOU LOOKING FOR?" aria-label="Search">
+                <a class="search-web ml-3" href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </form>
+        </div>
+        <span id="close" class="close ">X</span>
+    </div>
+
+    <!--menubar for short  screen  -->
+
+    <div id="wrapper1">
+        <div id="sidenavContainer">
+            <ul class="small-screen-menu">
+                <li class="smallmenu-image">
+                    <!--<img src="IMAGES/Skype-pink-icon.png" style="width:100px;height:70px;" />-->
+                </li>
+                <li>
+                    <a id="one" href="#"> about
+                        <i class="down-arrow1 fa fa-angle-down fa-2x pull-right align-middle" aria-hidden="true"></i>
+                        <i class="up-arrow1 fa fa-angle-up fa-2x pull-right align-middle" aria-hidden="true"></i>
+                    </a>
+                    <ul id="submenu1" class="submenu">                                                                                                                                                                                  
+                        <li><a  class="link1" href="#about"> about us <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a class="link2" href="#team"> team<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i> </a></li>
+                        <li><a class="link3" href="#approach">approach<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a id="two" href="#">
+                        investment
+                        <i class="down-arrow1 fa fa-angle-down fa-2x pull-right align-middle" aria-hidden="true"></i>
+                        <i class="up-arrow1 fa fa-angle-up fa-2x pull-right align-middle" aria-hidden="true"></i>
+                    </a>
+                    <ul id="submenu2" class="submenu">
+                        <li><a href="#Companies" class="link4">our companies<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a href="#FAQ" class="link5">FAQ<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a href="#Registration" class="link6">Registration <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="three" href="#">
+                        fellowshp
+                        <i class="down-arrow1 fa fa-angle-down fa-2x pull-right align-middle" aria-hidden="true"></i>
+                        <i class="up-arrow1 fa fa-angle-up fa-2x pull-right align-middle" aria-hidden="true"></i>
+                    </a>
+                    <ul id="submenu3" class="submenu">
+                        <li><a href="#category" class="link7">category<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+               <!--  -->
+                        <!--<li><a href="#JSONdata" class="link8">JSON DATA<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a href="#JSONAPI" class="link9">JSON API<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>-->
+                    </ul>
+
+                </li>
+
+
+            </ul>
+            <div id="smallmenu-socialmedia" style="margin-bottom:50px;">
+
+
+                <!--//<a  href="http://twitter.com"><i class="fa fa-twitter"></i></a>-->
+                <!--<a  href="http://facebook.com"><i class="fa fa-facebook"></i></a>-->
+                <!--<a href="http://youtube.com"><i class="fa fa-youtube"></i></a>-->
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="stickySpacer"></div>
+
+    
+
+ <div id="content-container">
+
+    <div style="height:40px;">
+
+    </div>
+        <div id="intro" class="intro paddingtop-60">
+            <div class="intro-content">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="intro-left">
+                                <h2 class="h-ultra">Wecare Group </h2>
+                                <h4 class="h-light"> provide best services to people   </h4>
+                                <div class="intro-div-transparent">
+
+                                    <ul class="lead-list">
+                                        <li>
+                                            <span class="fa fa-check fa-2x icon-success">
+
+                                            </span>
+                                            <span class="list">
+                                                <strong>Affordable monthly premium packages</strong>
+                                                <br />
+                                                Lorem ipsum dolor sit amet, in verterem persecuti vix, sit te meis
+                                            </span>
+                                        </li>
+                                        <li><span class="fa fa-check fa-2x icon-success"></span> <span class="list"><strong>Choose your favourite doctor</strong><br />Lorem ipsum dolor sit amet, in verterem persecuti vix, sit te meis</span></li>
+                                        <li><span class="fa fa-check fa-2x icon-success"></span> <span class="list"><strong>Only use friendly environment</strong><br />Lorem ipsum dolor sit amet, in verterem persecuti vix, sit te meis</span></li>
+                                    </ul>
+                                    <a href="#" class="btn btn-skin btn-lg">Learn more <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="intro-left-img text-center ">
+
+                                <img src="IMAGES/intro-tran.png" class="img-resonsive" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="pricing" class="home-section bg-gray paddingbot-60">
+                <div class="container marginbot-50">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="section-heading text-center">
+                                <h2 class="h-bold">Health packages</h2>
+                                <p>Take charge of your health today with our specially designed health packages</p>
+                            </div>
+                            <div class="divider-short"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-sm-4 pricing-box">
+                            <div class="pricing-content general">
+                                <h2>Basic Fit 1 Package</h2>
+                                <h3>$33<sup>.99</sup> <span>/ one time</span></h3>
+                                <ul>
+                                    <li>Anthropometry (BMI, WH Ratio) <i class="fa fa-check icon-success"></i></li>
+                                    <li>Post Examination Review <i class="fa fa-check icon-success"></i></li>
+                                    <li>General Screening – Basic <i class="fa fa-check icon-success"></i></li>
+                                    <li><del>Health Screening Report</del> <i class="fa fa-times icon-danger"></i></li>
+                                </ul>
+
+                                <div class="price-bottom">
+                                    <a href="#" class="btn btn-skin btn-lg">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pricing-box featured-price">
+                            <div class="pricing-content featured">
+                                <h2>Golden Glow Package</h2>
+                                <h3>$65<sup>.99</sup> <span>/ one time</span></h3>
+                                <ul>
+                                    <li>Anthropometry (BMI, WH Ratio) <i class="fa fa-check icon-success"></i></li>
+                                    <li>Post Examination Review <i class="fa fa-check icon-success"></i></li>
+                                    <li>General Screening – Basic <i class="fa fa-check icon-success"></i></li>
+                                    <li>Body Composition Analysis <i class="fa fa-check icon-success"></i></li>
+                                    <li>GR Assessment & Scoring <i class="fa fa-check icon-success"></i></li>
+                                </ul>
+
+                                <div class="price-bottom">
+                                    <a href="#" class="btn btn-skin btn-lg">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pricing-box">
+                            <div class="pricing-content general last">
+                                <h2>Basic Fit 2 Package</h2>
+                                <h3>$47<sup>.99</sup> <span>/ one time</span></h3>
+                                <ul>
+                                    <li>Anthropometry (BMI, WH Ratio) <i class="fa fa-check icon-success"></i></li>
+                                    <li>Post Examination Review <i class="fa fa-check icon-success"></i></li>
+                                    <li>General Screening – Regular <i class="fa fa-check icon-success"></i></li>
+                                    <li><del>Health Screening Report</del> <i class="fa fa-times icon-danger"></i></li>
+                                </ul>
+
+                                <div class="price-bottom">
+                                    <a href="#" class="btn btn-skin btn-lg">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section id="service" class="marginbot-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2 class="ser-title">Our Service</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-info">
+                                <div class="icon">
+                                    <i class="fa fa-stethoscope"></i>
+                                </div>
+                                <div class="icon-info">
+                                    <h4>24 Hour Support</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-info">
+                                <div class="icon">
+                                    <i class="fa fa-ambulance"></i>
+                                </div>
+                                <div class="icon-info">
+                                    <h4>Emergency Services</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-info">
+                                <div class="icon">
+                                    <i class="fa fa-user-md"></i>
+                                </div>
+                                <div class="icon-info">
+                                    <h4>Medical Counseling</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-info">
+                                <div class="icon">
+                                    <i class="fa fa-medkit"></i>
+                                </div>
+                                <div class="icon-info">
+                                    <h4>Premium Healthcare</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-info">
+                                <div class="icon">
+                                    <i class="fa fa-medkit"></i>
+                                </div>
+                                <div class="icon-info">
+                                    <h4>Premium Healthcare</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-info">
+                                <div class="icon">
+                                    <i class="fa fa-user-md"></i>
+                                </div>
+                                <div class="icon-info">
+                                    <h4>Medical Counseling</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="backgrouncheck">
+                <section id="event">
+                    <div class="bg-color section-padding">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 text-center" style="padding:60px;">
+                                    <h1 class="header-h">Up Coming events</h1>
+                                    <p class="header-p">Decorations 100% complete here</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 left-images">
+                                    <img src="IMAGES/8.jpg" class="img-responsive">
+                                </div>
+                                <div class="col-md-6 col-sm-6 details-text">
+                                    <div class="content-holder">
+                                        <h2>Joyful party</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
+                                        <address>
+                                            <strong>Place: </strong>
+                                            1612 Collins Str, Victoria 8007
+                                            <br>
+                                            <strong>Time: </strong>
+                                            07:30pm
+                                        </address>
+                                        <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <div class="team" id="team">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 team-header">
+                                <h2 class="bg-danger"> Our Team </h2>
+                                <p> Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 team-content wow fadeInLeft" data-wow-delay="2s">
+                                <img src="IMAGES/1.jpg" alt="img1" class="rounded-circle">
+                                <h4>   Bushra</h4>
+                                <b> MD</b>
+                                <p>ot simply random text.not simply random text.  not simply random text.not simply random text.</p>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 team-content wow fadeInLeft" data-wow-delay="1.6s">
+                                <img src="IMAGES/2.jpg" alt="img1" class="rounded-circle">
+                                <h4> Qadeer</h4>
+                                <b> Director</b>
+                                <p>ot simply random text.not simply random text.  not simply random text.not simply random text.</p>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 team-content wow fadeInLeft" data-wow-delay="1.2s">
+                                <img src="IMAGES/7.jpg" alt="img1" class="rounded-circle">
+                                <h4>  Zaffar</h4>
+                                <b> Chief executive</b>
+                                <p>ot simply random text.not simply random text.  not simply random text.not simply random text.</p>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-md-3  team-content  fadeInLeft" data-wow-delay="0.8s">
+                                <img src="IMAGES/4.jpg" alt="img1" class="rounded-circle">
+                                <h4> Hassan</h4>
+                                <b> Doctor</b>
+                                <p>ot simply random text.not simply random text.  not simply random text.not simply random text.</p>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+
+
+    <div class="sidebar-top-wrapper">
+        <div class="sidebar-toptopage scrollup1">
+            <a href="#" class="scrollup"><i class="fa fa-arrow-circle-o-up"></i></a>
+        </div>
+
+    </div>
+
+    <div id="social-media-place-holder">
+
+    </div>
+
+
+
+    <div id="footer-place-holder">
+
+    </div>
+
+    <!--<p class="float-sm-right">hell</p>-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="Scripts/jquery-3.2.1.js"></script>
+    <!--<script src="Scripts/jquery-3.2.1.slim.js"></script>-->
+    <script src="Scripts/umd/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="jqueryALL.js"></script>
+    <script src="custom-team-js.js"></script>
+    <script src="indexjquery.js"></script>
+
+
+
+    <!-- code for ajax check -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.get("footer1.html", function (data) {
+                $("#footer-place-holder").replaceWith(data);
+            });
+            $.get("social-media1.html", function (data) {
+                $("#social-media-place-holder").replaceWith(data);
+            });
+
+            //link1
+            var check1 = 1;
+            var output1 = '';
+            var output2 = '';
+            var output3 = '';
+            var output4 = '';
+            var btn = $('.link1');
+            btn.bind('click', loaddata);
+            function loaddata() {
+                //output = "";
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "about1.html", true);
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check1 == 1) {
+                            output1 += this.responseText;
+                            check1++;
+                            $('#content-container').html(output1);
+                        }
+                        else if (check1 > 1) {
+                            output1 += "";
+                            $('#content-container').html(output1);
+
+                        }
+                    }
+                };
+                xhttp.send();
+            }
+
+            //      link2
+            output2 = "";
+            var check2 = 1;
+            var btn1 = $('.link2');
+            btn1.bind('click', loaddata2);
+            function loaddata2() {
+                //output = "";
+                var xhttp1 = new XMLHttpRequest();
+                xhttp1.open("GET", "team1.html", true);
+                xhttp1.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check2 == 1) {
+                            output2 += this.responseText;
+                            check2++;
+                            $('#content-container').html(output2);
+                        }
+                        else if (check2 > 1) {
+                            output2 += "";
+                            $('#content-container').html(output2);
+
+                        }
+
+                    }
+                };
+                xhttp1.send();
+            }
+
+
+            //link3
+
+            //      link2
+            output3 = "";
+            var check3 = 1;
+            var btn3 = $('.link3');
+            btn3.bind('click', loaddata3);
+            function loaddata3() {
+                //output = "";
+                var xhttp3 = new XMLHttpRequest();
+                xhttp3.open("GET", "approach1.html", true);
+                xhttp3.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check3 == 1) {
+                            output3 += this.responseText;
+                            check3++;
+                            $('#content-container').html(output3);
+                        }
+                        else if (check3 > 1) {
+                            output3 += "";
+                            $('#content-container').html(output3);
+
+                        }
+
+                    }
+                };
+                xhttp3.send();
+            }
+
+
+            //      link4
+            var output4 = "";
+            var check4 = 1;
+            var btn4 = $('.link4');
+            btn4.bind('click', loaddata4);
+            function loaddata4() {
+                //output = "";
+                var xhttp4 = new XMLHttpRequest();
+                xhttp4.open("GET", "companies1.html", true);
+                xhttp4.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check4 == 1) {
+                            output4 += this.responseText;
+                            check4++;
+                            $('#content-container').html(output4);
+                        }
+                        else if (check4 > 1) {
+                            output4 += "";
+                            $('#content-container').html(output4);
+
+                        }
+
+                    }
+                };
+                xhttp4.send();
+            }
+
+
+
+
+            //      link5
+            var output5 = "";
+            var check5 = 1;
+            var btn5 = $('.link5');
+            btn5.bind('click', loaddata5);
+            function loaddata5() {
+                //output = "";
+                var xhttp5 = new XMLHttpRequest();
+                xhttp5.open("GET", "FAQ1.html", true);
+                xhttp5.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check5 == 1) {
+                            output5 += this.responseText;
+                            check5++;
+                            $('#content-container').html(output5);
+                        }
+                        else if (check5 > 1) {
+                            output5 += "";
+                            $('#content-container').html(output5);
+
+                        }
+
+                    }
+                };
+                xhttp5.send();
+            }
+
+            // link6
+            //      link5
+            var output6 = "";
+            var check6 = 1;
+            var btn6 = $('.link6');
+            btn6.bind('click', loaddata6);
+            function loaddata6() {
+                //output = "";
+                var xhttp6 = new XMLHttpRequest();
+                xhttp6.open("GET", "formval_jquery1.html", true);
+                xhttp6.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check6 == 1) {
+                            output6 += this.responseText;
+                            check6++;
+                            $('#content-container').html(output6);
+                        }
+                        else if (check6 > 1) {
+                            output6 += "";
+                            $('#content-container').html(output6);
+
+                        }
+
+                    }
+                };
+                xhttp6.send();
+            }
+
+
+            // link6
+            //      link5
+            var output7 = "";
+            var check7 = 1;
+            var btn7 = $('.link7');
+            btn7.bind('click', loaddata7);
+            function loaddata7() {
+                //output = "";
+                var xhttp7 = new XMLHttpRequest();
+                xhttp7.open("GET", "category1.html", true);
+                xhttp7.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check7 == 1) {
+                            output7 += this.responseText;
+                            check7++;
+                            $('#content-container').html(output7);
+                        }
+                        else if (check7 > 1) {
+                            output7 += "";
+                            $('#content-container').html(output7);
+
+                        }
+
+                    }
+                };
+                xhttp7.send();
+            }
+            // link6
+            //      link5
+            var output8 = "";
+            var check8 = 1;
+            var btn8 = $('.link8');
+            btn8.bind('click', loaddata8);
+            function loaddata8() {
+                //output = "";
+                var xhttp8 = new XMLHttpRequest();
+                //xhttp8.open("GET", "jsonpage1.html", true);
+                xhttp8.open("GET", "jsonpage1.html", true);
+                xhttp8.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check8 == 1) {
+                            output8 += this.responseText;
+                            check8++;
+                            $('#content-container').html(output8);
+                        }
+                        else if (check8 > 1) {
+                            output8 += "";
+                            $('#content-container').html(output8);
+
+                        }
+
+                    }
+                };
+                xhttp8.send();
+            }
+
+            // link6
+            //      link5
+            var output9 = "";
+            var check9 = 1;
+            var btn9 = $('.link9');
+            btn9.bind('click', loaddata9);
+            function loaddata9() {
+                //output = "";
+                var xhttp9 = new XMLHttpRequest();
+                //xhttp9.open("GET", "jsonpage1.html", true);
+                xhttp9.open("GET", "jsonpage-ExternalAPI1.html", true);
+                xhttp9.onreadystatechange = function () {
+
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (check9 == 1) {
+                            output9 += this.responseText;
+                            check9++;
+                            $('#content-container').html(output9);
+                        }
+                        else if (check9 > 1) {
+                            output9 += "";
+                            $('#content-container').html(output9);
+
+                        }
+
+                    }
+                };
+                xhttp9.send();
+            }
+            // link6
+            //      link5
+            //var output10 = "";
+            //var check10 = 1;
+            //var btn10 = $('.link10');
+            //btn10.bind('click', loaddata10);
+            //function loaddata10() {
+            //    var xhttp10 = new XMLHttpRequest();
+            //    xhttp10.open("GET", "category1.html", true);
+            //    xhttp10.onreadystatechange = function () {
+
+            //        if (this.readyState == 4 && this.status == 200) {
+            //            if (check10 == 1) {
+            //                output10 += this.responseText;
+            //                check10++;
+            //                $('#content-container').html(output10);
+            //            }
+            //            else if (check10 > 1) {
+            //                output10 += "";
+            //                $('#content-container').html(output10);
+
+            //            }
+
+            //        }
+            //    };
+            //    xhttp10.send();
+            //}
+
+                        //        //$.get("navigation-bar.html", function (data) {
+            //        //    $("#nav-placeholder").replaceWith(data);
+            //        //});
+            //        //$.get("footer.html", function (data) {
+            //        //    $("#footer-place-holder").replaceWith(data);
+            //        //});
+            //        //$.get("social-media.html", function (data) {
+            //        //    $("#social-media-place-holder").replaceWith(data);
+            //        //});
+        });
+
+    </script>
+
+
+
+
+    <!--  -->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+</body>
+</html>
