@@ -4,12 +4,12 @@
 	font-size: 32px;
 }
 
-h1 {    font-size: 38px;}
-h2 {    font-size: 36px;}
-h3 {    font-size: 32px;}
-h4 {    font-size: 28px;}
-h5 {    font-size: 24px;}
-h6 {    font-size: 20px;}
+h1 {    font-size: 5.8vmin;}
+h2 {    font-size: 4.8vmin;}
+h3 {    font-size: 4.2vmin;}
+h4 {    font-size: 3.0vmin;}
+h5 {    font-size: 2.8vmin;}
+h6 {    font-size: 2.6vmin}
 
 h1,h2,h3,h4,h5,h6 {
     margin: 0 0 30px;

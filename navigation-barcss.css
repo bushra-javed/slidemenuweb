@@ -42,6 +42,7 @@ a:active {
 .navbar {
     text-transform: uppercase;
     font-family: 'PT sans Narrow', Arial, sans-serif;
+    box-shadow: 1px 1px 4px #444444;
 }
 
 .mainnavbar {
@@ -121,20 +122,25 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
 
 .navbar-light .navbar-nav .nav-link {
  
-    color:#fff;
     color: rgba(0,0,0,.5);
+    color:#fff;
 }
 
-.navbar-nav .nav-item a,
-.navbar-nav .nav-item a img,
-.navbar-nav .nav-item a i {
-
+.navbar-nav .nav-item a
+/* .navbar-nav .nav-item a img, */
+/* .navbar-nav .nav-item a i { */
+    {
     margin-top: 10px !important;
     margin-bottom: 20px;
     cursor: pointer;
     margin-right: 20px !important;
     color: rgba(0, 0, 0, .5); 
     color:#FFF;
+}
+
+.dropdown-menu a.dropdown-item{
+    color: rgba(0, 0, 0, .5); 
+    
 }
 .sign-in {
     padding: 0;
@@ -165,7 +171,8 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
 .mainnavbar.navbar {
     height: 70px;
 
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 11px solid red;
+    /* rgba(255, 255, 255, .3); */
 }
 
 .navbar-nav .nav-item .dropdown-menu {
@@ -342,7 +349,7 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
     background: 0 0;
     color: rgb(255, 255, 255);
     border: none;
-    border-bottom: 1px #fff solid;
+    /* border-bottom: 1px #fff solid; */
     font-size: 18px;
     line-height: 1.25;
     text-align: center;
